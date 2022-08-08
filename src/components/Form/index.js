@@ -9,11 +9,11 @@ const [weight, setWeight] = useState(null)
 const [messageImc, setMessageImc] = useState("Preencha o peso e altura");
 const [imc, setImc] = useState(null)
 const [textButton, setTextButton] = useState("Calcular")
-
+//função que calcula o imc
 function imcCalculator(){
     return setImc((weight/(height*height)).toFixed(2))
 }
-
+//função de verificação do calculo
 function validationImc(){
     if(weight!= null && height !=null){
         imcCalculator()
